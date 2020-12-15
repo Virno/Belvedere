@@ -1,0 +1,84 @@
+body {
+	font-family: "Segoe UI", "sans-serif";
+}
+
+.logo {
+	width: 12em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+*
+* Structure des grids de l'accueil
+*
+=================================================*/
+
+.grid-container-accueil {
+	display: grid;
+	font-size: 3.5em;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+    "grid_chirurgie grid_mater grid_gyneco grid_actu"
+    "grid_chirurgie grid_mater grid_gyneco grid_actu"
+    "grid_chirurgie grid_mater grid_gyneco grid_actu";
+}
+
+.grid_chirurgie {
+	position: relative;
+	z-index: 1;
+    grid-area: grid_chirurgie;
+    color: #94B7E6;
+    background: #ffffff;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+.grid_chirurgie:hover {
+	z-index: 2;
+	color:#ffffff;
+	background: #94B7E6;
+}
+
+.grid_mater { 
+	z-index: 1;
+	position: relative;
+	grid-area: grid_mater;
+	color: #FFA498;
+	background: #ffffff;	
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+.grid_mater:hover { 
+	color: #ffffff;
+	background: #FFA498;
+}
+
+.grid_gyneco { 
+	position: relative;
+	grid-area: grid_gyneco;
+	color: #B199E1;
+	background: #ffffff;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+.grid_gyneco:hover { 
+	color: #ffffff;
+	background: #B199E1;
+}
+
+.grid_actu { 
+	position: relative;
+	grid-area: grid_actu;
+	color: #E8B73A;
+	background: #ffffff;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+.grid_actu:hover { 
+	color: #ffffff;
+	background: #E8B73A;
+}
+
