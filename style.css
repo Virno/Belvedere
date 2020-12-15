@@ -38,6 +38,7 @@ body {
 }
 .grid_chirurgie:hover {
 	z-index: 2;
+	left: 150%;
 	color:#ffffff;
 	background: #94B7E6;
 }
