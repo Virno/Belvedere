@@ -9,21 +9,30 @@
 </head>
 <body>
 	<header>
-	<img class= "logo" src="Google_logo.svg" alt="logo google">
+	<img class= "logo" src="img/Google_logo.svg" alt="logo google">
 	</header>
 	<div class="grid-container-accueil">
-	  <div class="grid_chirurgie">
-	    <p><strong>CHIRURGIE</strong></p>
+	  <div id="Nav" class="grid_chirurgie" onmouseover="openNav()">
+		<a href="#">
+			<p><strong>CHIRURGIE</strong></p>
+		</a>
       </div>
-	  <div class="grid_mater">
-	    <p><strong>MATERNITÉ</strong></p>
+	  <div id="Nav2" class="grid_mater" onmouseover="openNav2()">
+		<a href="#">
+			<p><strong>MATERNITÉ</strong></p>
+		</a>
       </div>
-	  <div class="grid_gyneco">
-	    <p><strong>GYNÉCOLOGIE</strong></p>
+	  <div id="Nav3" class="grid_gyneco" onmouseover="openNav3()">
+		<a href="#">
+			<p><strong>GYNÉCOLOGIE</strong></p>
+		</a>
       </div>
-	  <div class="grid_actu">
-	    <p><strong>ACTUALITÉ</strong></p>
+	  <div id="Nav4" class="grid_actu" onmouseover="openNav4()">
+		<a href="#">
+			<p><strong>ACTUALITÉ</strong></p>
+		</a>
       </div>
 	</div>
+	<script src="app.js"></script>
 </body>
 </html>

@@ -26,60 +26,110 @@ body {
     "grid_chirurgie grid_mater grid_gyneco grid_actu"
     "grid_chirurgie grid_mater grid_gyneco grid_actu";
 }
-
+/*
+*
+* Structure de la grid chirurgie
+*
+=================================================*/
 .grid_chirurgie {
 	position: relative;
-	z-index: 1;
+	z-index: 2;
+	transition: 0.5s;
     grid-area: grid_chirurgie;
-    color: #94B7E6;
     background: #ffffff;
     writing-mode: vertical-rl;
-    text-orientation: upright;
+	text-orientation: upright;
+	
+}
+.grid_chirurgie a {
+	text-decoration: none;
+	color: #94B7E6;
 }
 .grid_chirurgie:hover {
 	z-index: 2;
-	left: 150%;
-	color:#ffffff;
+	padding-left: 100%;
 	background: #94B7E6;
 }
-
+.grid_chirurgie:hover a{
+	color:#ffffff;
+}
+/*
+*
+* Structure de la grid mater
+*
+=================================================*/
 .grid_mater { 
-	z-index: 1;
 	position: relative;
+	z-index: 1;
+	transition: 0.5s;
 	grid-area: grid_mater;
-	color: #FFA498;
 	background: #ffffff;	
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 }
-.grid_mater:hover { 
-	color: #ffffff;
+.grid_mater a{ 
+	text-decoration: none;
+	color: #FFA498;
+}
+.grid_mater:hover {
+	z-index: 2;
+	padding-left: 100%;
 	background: #FFA498;
 }
-
+.grid_mater:hover a{
+	color: #ffffff;
+}
+/*
+*
+* Structure de la grid gyneco
+*
+=================================================*/
 .grid_gyneco { 
 	position: relative;
+	z-index: 1;
+	transition: 0.5s;
 	grid-area: grid_gyneco;
-	color: #B199E1;
 	background: #ffffff;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
+}
+.grid_gyneco a{ 
+	text-decoration: none;
+	color: #B199E1;
 }
 .grid_gyneco:hover { 
-	color: #ffffff;
+	z-index: 3;
+	padding-right: 100%;
 	background: #B199E1;
 }
-
+.grid_gyneco:hover a{ 
+	color: #ffffff;
+}
+/*
+*
+* Structure de la grid actu
+*
+=================================================*/
 .grid_actu { 
 	position: relative;
+	z-index: 2;
+	transition: 0.5s;
 	grid-area: grid_actu;
-	color: #E8B73A;
 	background: #ffffff;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 }
+.grid_actu a{ 
+	text-decoration: none;
+	color: #E8B73A;
+}
 .grid_actu:hover { 
+	z-index: 2;
+	padding-right: 100%;
 	color: #ffffff;
 	background: #E8B73A;
+}
+.grid_actu:hover a{ 
+	color: #ffffff;
 }
 
