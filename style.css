@@ -47,7 +47,7 @@ body {
 }
 .grid_chirurgie:hover {
 	z-index: 2;
-	padding-left: 100%;
+	padding-left: 70%;
 	background: #94B7E6;
 }
 .grid_chirurgie:hover a{
@@ -73,7 +73,7 @@ body {
 }
 .grid_mater:hover {
 	z-index: 2;
-	padding-left: 100%;
+	padding-left: 70%;
 	background: #FFA498;
 }
 .grid_mater:hover a{
@@ -98,8 +98,8 @@ body {
 	color: #B199E1;
 }
 .grid_gyneco:hover { 
-	z-index: 3;
-	padding-right: 100%;
+	z-index: 2;
+	padding-left: 70%;
 	background: #B199E1;
 }
 .grid_gyneco:hover a{ 
@@ -112,7 +112,7 @@ body {
 =================================================*/
 .grid_actu { 
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 	transition: 0.5s;
 	grid-area: grid_actu;
 	background: #ffffff;
@@ -125,7 +125,7 @@ body {
 }
 .grid_actu:hover { 
 	z-index: 2;
-	padding-right: 100%;
+	padding-right: 70%;
 	color: #ffffff;
 	background: #E8B73A;
 }
