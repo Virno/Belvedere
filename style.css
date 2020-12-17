@@ -1,171 +1,208 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: "Segoe UI", "sans-serif";
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 .logo {
-	width: 12em;
+	width: 10em;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.sliding-menu {
+	background: rgb(255, 255, 255);
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+  
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: stretch;
+	font-size: 300%;
 }
 
 /*
 *
-* Structure des grids de l'accueil
+Slide chirurgie
 *
-=================================================*/
-
-.grid-container-accueil {
-	display: grid;
-	font-size: 3.5em;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	gap: 0px 0px;
-	grid-template-areas:
-    "grid_chirurgie grid_mater grid_gyneco grid_actu"
-    "grid_chirurgie grid_mater grid_gyneco grid_actu"
-    "grid_chirurgie grid_mater grid_gyneco grid_actu";
-}
-/*
-*
-* Structure de la grid chirurgie
-*
-=================================================*/
-.grid_chirurgie {
-	position: relative;
-	width: 100%;
-	z-index: 2;
+*/
+.sliding-menu .slide-chirurgie {
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+	justify-content: center;
 	transition: 0.5s;
-    grid-area: grid_chirurgie;
-    background: #ffffff;
-    writing-mode: vertical-rl;
-	text-orientation: upright;
-}
-.grid_chirurgie a {
-	text-decoration: none;
 	color: #94B7E6;
+  
+
 }
-.grid_chirurgie:hover {
-	z-index: 2;
-	padding-left: 70%;
-	background: #94B7E6;
+.sliding-menu .slide-chirurgie:not(:last-child) {
+	border-right: 1px solid #acacac;
 }
-.grid_chirurgie:hover a{
-	color:#ffffff;
+  
+.sliding-menu .slide-chirurgie:hover {
+	background-color:#94B7E6;
+	color: white;
 }
+
 /*
 *
-* Structure de la grid mater
+Slide mater
 *
-=================================================*/
-.grid_mater { 
-	position: relative;
-	z-index: 1;
+*/
+.sliding-menu .slide-mater {
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+	justify-content: center;
 	transition: 0.5s;
-	grid-area: grid_mater;
-	background: #ffffff;	
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-}
-.grid_mater a{ 
-	text-decoration: none;
 	color: #FFA498;
 }
-.grid_mater:hover {
-	z-index: 2;
-	padding-left: 70%;
-	background: #FFA498;
+.sliding-menu .slide-mater:not(:last-child) {
+	border-right: 1px solid #acacac;
 }
-.grid_mater:hover a{
-	color: #ffffff;
+  
+.sliding-menu .slide-mater:hover {
+	background-color: #FFA498;
+	color: white;
 }
+
 /*
 *
-* Structure de la grid gyneco
+Slide gyneco
 *
-=================================================*/
-.grid_gyneco { 
-	position: relative;
-	z-index: 1;
+*/
+.sliding-menu .slide-gyneco {
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+	justify-content: center;
 	transition: 0.5s;
-	grid-area: grid_gyneco;
-	background: #ffffff;
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-}
-.grid_gyneco a{ 
-	text-decoration: none;
 	color: #B199E1;
 }
-.grid_gyneco:hover { 
-	z-index: 2;
-	padding-right: 70%;
-	background: #B199E1;
+.sliding-menu .slide-gyneco:not(:last-child) {
+	border-right: 1px solid #acacac;
 }
-.grid_gyneco:hover a{ 
-	color: #ffffff;
+  
+.sliding-menu .slide-gyneco:hover {
+	background-color: #B199E1;
+	color: white;
 }
+
 /*
 *
-* Structure de la grid actu
+Slide actu
 *
-=================================================*/
-.grid_actu { 
-	position: relative;
-	z-index: 1;
+*/  
+.sliding-menu .slide-actu {
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+	justify-content: center;
 	transition: 0.5s;
-	grid-area: grid_actu;
-	background: #ffffff;
-	writing-mode: vertical-rl;
-	text-orientation: upright;
+	color:  #E8B73A;
 }
-.grid_actu a{ 
-	text-decoration: none;
-	color: #E8B73A;
+.sliding-menu .slide-actu:not(:last-child) {
+	border-right: 1px solid #acacac;
 }
-.grid_actu:hover { 
-	z-index: 2;
-	padding-right: 70%;
-	color: #ffffff;
-	background: #E8B73A;
-}
-.grid_actu:hover a{ 
-	color: #ffffff;
+  
+.sliding-menu .slide-actu:hover {
+	background-color: #E8B73A;
+	color: white;
 }
 
+@media (max-width: 60rem) {
 /*
 *
-* Structure du footer
+Slide chirurgie
 *
-=================================================*/
-.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	gap: 0px 0px;
-	grid-template-areas:
-	  "map map telephone telephone"
-	  "map map horaire horaire"
-	  "map map rdv rdv"
-	  "map map mentions mentions";
+*/
+	.sliding-menu .slide-chirurgie:hover {
+	  padding-top: 40vw;
+	}
+/*
+*
+Slide mater
+*
+*/
+	.sliding-menu .slide-mater:hover {
+		padding-top: 40vw;
+	}
+/*
+*
+Slide gyneco
+*
+*/
+	.sliding-menu .slide-gyneco:hover {
+		padding-top: 40vw;
+	}
+/*
+*
+Slide actu
+*
+*/
+	.sliding-menu .slide-actu:hover {
+		padding-top: 40vw;
+	}
 }
 
-  .map {
-	  grid-area: map
+@media (min-width: 60rem) {
+	.sliding-menu {
+	  flex-direction: row;
+	}
+/*
+*
+Slide chirurgie
+*
+*/
+	.sliding-menu .slide-chirurgie span {
+	  transform: rotate(-90deg);
+	}
+	.sliding-menu .slide-chirurgie:hover {
+	  padding-right: 40vw;
+	}
+/*
+*
+Slide mater
+*
+*/
+	.sliding-menu .slide-mater span {
+		transform: rotate(-90deg);
+	  }
+	  .sliding-menu .slide-mater:hover {
+		padding-right: 40vw;
+	}
+/*
+*
+Slide gyneco
+*
+*/
+	.sliding-menu .slide-gyneco span {
+		transform: rotate(-90deg);
+	  }
+	  .sliding-menu .slide-gyneco:hover {
+		padding-right: 40vw;
+	}
+/*
+*
+Slide actu
+*
+*/
+	.sliding-menu .slide-actu span {
+		transform: rotate(-90deg);
+	  }
+	  .sliding-menu .slide-actu:hover {
+		padding-right: 40vw;
+	}
 }
 
-  .telephone {
-	  grid-area: telephone;
-}
-
-  .horaire {
-	  grid-area: horaire;
-}
-
-  .rdv {
-	  grid-area: rdv;
-}
-
-  .mentions {
-	  grid-area: mentions;
-}
