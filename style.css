@@ -33,6 +33,7 @@ body {
 =================================================*/
 .grid_chirurgie {
 	position: relative;
+	width: 100%;
 	z-index: 2;
 	transition: 0.5s;
     grid-area: grid_chirurgie;
@@ -45,6 +46,10 @@ body {
 	text-decoration: none;
 	color: #94B7E6;
 }
+.grid_chirurgie a img{
+	width: 0%;
+	height: auto;
+}
 .grid_chirurgie:hover {
 	z-index: 2;
 	padding-left: 70%;
@@ -52,6 +57,10 @@ body {
 }
 .grid_chirurgie:hover a{
 	color:#ffffff;
+}
+.grid_chirurgie:hover a img{
+	width: 150%;
+	height: auto;
 }
 /*
 *
@@ -71,6 +80,10 @@ body {
 	text-decoration: none;
 	color: #FFA498;
 }
+.grid_mater a img{ 
+	width: 0%;
+	height: auto;
+}
 .grid_mater:hover {
 	z-index: 2;
 	padding-left: 70%;
@@ -78,6 +91,10 @@ body {
 }
 .grid_mater:hover a{
 	color: #ffffff;
+}
+.grid_mater:hover a img{
+	width: 100%;
+	height: auto;
 }
 /*
 *
