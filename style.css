@@ -1,6 +1,7 @@
 body {
 	font-family: 'Maven Pro', sans-serif;
 	overflow: hidden;
+	margin: 0;
 }
 /*code menu denis
 *
@@ -9,14 +10,25 @@ body {
 * {
 	box-sizing: border-box;
   }
-  
+
   .strips {
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+	flex-direction: column;
 	min-height: 100vh;
 	text-align: center;
 	overflow: hidden;
 	color: white;
+	margin: 0;
   }
   .strips__strip {
+	  display: flex;
+	  flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;
+	  align-items: center;
+	  justify-content: center;
 	will-change: width, left, z-index, height;
 	position: absolute;
 	width: 25%;
@@ -42,8 +54,8 @@ body {
 	background: #94B7E6;
 	-webkit-transform: translate3d(-100%, 0, 0);
 			transform: translate3d(-100%, 0, 0);
-	-webkit-animation-name: strip1;
-			animation-name: strip1;
+	-webkit-animation-name: strip3;
+			animation-name: strip3;
 	-webkit-animation-delay: 0.1s;
 			animation-delay: 0.1s;
   }
@@ -193,11 +205,17 @@ body {
 	-webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 	top: 28%;
+	
   }
-  .strip__title:hover{
+  .Chirurgie_title .Actu_title .Gyleco_title .Maternite_title{
 	position: relative;
-	animation-name: textbouge;
-	animation-duration: 1s;
+	right: 0%;
+	transition: 0.5s;
+
+  }
+  .Chirurgie_title .Actu_title .Gyleco_title .Maternite_title:hover{
+	position: relative;
+	right: 25%;
   }
   .strip_img{
 	position: absolute;
@@ -208,7 +226,7 @@ body {
   }
   @media screen and (max-width: 760px) {
 	.strip__title {
-	  font-size: 28px;
+	  font-size: 50pt;
 	  transform: rotate(0deg);
 	}
   }
@@ -318,3 +336,26 @@ body {
 	}
   }
   
+  .strips{
+	list-style: none;
+	padding: 0;
+  
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: stretch;
+	flex: 1 1 100%;
+  }
+  .strips .strips__strip{
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+	justify-content: center;
+  
+	transition: all 300ms ease;
+  }
+
+
+	.strips .strips__strip:hover {
+	  padding-top: 40vw;
+	}
