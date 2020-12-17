@@ -40,15 +40,10 @@ body {
     background: #ffffff;
     writing-mode: vertical-rl;
 	text-orientation: upright;
-	
 }
 .grid_chirurgie a {
 	text-decoration: none;
 	color: #94B7E6;
-}
-.grid_chirurgie a img{
-	width: 0%;
-	height: auto;
 }
 .grid_chirurgie:hover {
 	z-index: 2;
@@ -57,10 +52,6 @@ body {
 }
 .grid_chirurgie:hover a{
 	color:#ffffff;
-}
-.grid_chirurgie:hover a img{
-	width: 150%;
-	height: auto;
 }
 /*
 *
@@ -80,10 +71,6 @@ body {
 	text-decoration: none;
 	color: #FFA498;
 }
-.grid_mater a img{ 
-	width: 0%;
-	height: auto;
-}
 .grid_mater:hover {
 	z-index: 2;
 	padding-left: 70%;
@@ -91,10 +78,6 @@ body {
 }
 .grid_mater:hover a{
 	color: #ffffff;
-}
-.grid_mater:hover a img{
-	width: 100%;
-	height: auto;
 }
 /*
 *
@@ -116,7 +99,7 @@ body {
 }
 .grid_gyneco:hover { 
 	z-index: 2;
-	padding-left: 70%;
+	padding-right: 70%;
 	background: #B199E1;
 }
 .grid_gyneco:hover a{ 
@@ -150,3 +133,39 @@ body {
 	color: #ffffff;
 }
 
+/*
+*
+* Structure du footer
+*
+=================================================*/
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	  "map map telephone telephone"
+	  "map map horaire horaire"
+	  "map map rdv rdv"
+	  "map map mentions mentions";
+}
+
+  .map {
+	  grid-area: map
+}
+
+  .telephone {
+	  grid-area: telephone;
+}
+
+  .horaire {
+	  grid-area: horaire;
+}
+
+  .rdv {
+	  grid-area: rdv;
+}
+
+  .mentions {
+	  grid-area: mentions;
+}
