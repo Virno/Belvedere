@@ -244,6 +244,7 @@ Slide actu
 }
 .mention ul li{
 	list-style: none;
+	padding: 10%;
 }
 .mention ul li a{
 	text-decoration: none;
