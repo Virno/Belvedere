@@ -5,39 +5,72 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Le Belvedere</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link href="style.css" rel="stylesheet" type="text/css">
-<script src="app.js"></script>
+
 </head>
 <body>
 	<header>
 <!-- Logo -->
-	<img class= "logo" src="Google_logo.svg" alt="logo google">
 	</header>
-	<div class="grid-container-accueil">
-<!-- grid Chirurgie -->
-	  <div id="Nav" class="grid_chirurgie" onmouseover="openNav()">
-		<a href="#">
-			<p><strong>CHIRURGIE</strong></p>
-		</a>
-	  </div>
-<!-- grid Maternité -->
-	  <div id="Nav2" class="grid_mater" onmouseover="openNav2()">
-		<a href="#">
-			<p><strong>MATERNITÉ</strong></p>
-		</a>
-	  </div>
-<!-- grid gyneco -->
-	  <div id="Nav3" class="grid_gyneco" onmouseover="openNav3()">
-		<a href="#">
-			<p><strong>GYNÉCOLOGIE</strong></p>
-		</a>
-	  </div>
-<!-- grid Actu -->
-	  <div id="Nav4" class="grid_actu" onmouseover="openNav4()">
-		<a href="#">
-			<p><strong>ACTUALITÉ</strong></p>
-		</a>
-      </div>
-	</div>
+
+		<section class="strips">
+			<article class="strips__strip">
+			  <div class="strip__content">
+				<h1 class="strip__title" data-name="Lorem">Chirurgie</h1>
+				<img class="strip_img" src="image_menu/chirurgie-low.png"/>
+				<div class="strip__inner-text">
+				  <h2>Chirurgie</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+				</div>
+				
+			  </div>
+			</article>
+			<article class="strips__strip">
+			  <div class="strip__content">
+				<h1 class="strip__title" data-name="Ipsum">Maternité</h1>
+				<div class="strip__inner-text">
+				  <h2>Maternité</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+				</div>
+			  </div>
+			</article>
+			<article class="strips__strip">
+			  <div class="strip__content">
+				<h1 class="strip__title" data-name="Dolor">Gynécologie</h1>
+				<div class="strip__inner-text">
+				  <h2>Gynécologie</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+				</div>
+			  </div>
+			</article>
+			<article class="strips__strip">
+			  <div class="strip__content">
+				<h1 class="strip__title" data-name="Sit">Actualité</h1>
+				<div class="strip__inner-text">
+				  <h2>Actualité</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+				</div>
+			  </div>
+			</article>
+			<!--<article class="strips__strip">
+			  <div class="strip__content">
+				<h1 class="strip__title" data-name="Amet">Here</h1>
+				<div class="strip__inner-text">
+				  <h2>Ettrics</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+				  <p>
+					<a href="https://twitter.com/ettrics" target="_blank"><i class="fa fa-twitter"></i></a>
+				  </p>
+				</div>
+			  </div>
+			</article>-->
+			<i class="fa fa-close strip__close"></i>
+		  </section>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="menu.js"></script>
+
 </body>
 </html>
