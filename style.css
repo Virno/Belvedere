@@ -1,245 +1,82 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
 body {
-	font-family: "Segoe UI", "sans-serif";
-	margin: 0;
-	padding: 0;
-	background-color: #ffffff;
-	overflow-x: hidden;
-	cursor: pointer;
-
-}
-
-.logo {
-	width: 10em;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 1%;
-	padding-bottom: 1%;
-}
-
-.sliding-menu {
-	background: rgb(255, 255, 255);
-	list-style: none;
-	padding: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-  
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	justify-content: stretch;
-	font-size: 300%;
-}
-
-/*
-*
-Slide chirurgie
-*
-*/
-.sliding-menu .slide-chirurgie {
-	display: flex;
-	flex: 1 1 100%;
-	align-items: center;
-	justify-content: center;
-	transition: 0.5s;
-	color: #ffffff;
-	background-color: #94B7E6;
-}
-  
-.sliding-menu .slide-chirurgie:hover {
-	font-size: 250%;
-}
-
-/*
-*
-Slide mater
-*
-*/
-.sliding-menu .slide-mater {
-	display: flex;
-	flex: 1 1 100%;
-	align-items: center;
-	justify-content: center;
-	transition: 0.5s;
-	color: #ffffff;
-	background-color: #FFA498;
-}
-  
-.sliding-menu .slide-mater:hover {
-	font-size: 250%;
-}
-
-/*
-*
-Slide gyneco
-*
-*/
-.sliding-menu .slide-gyneco {
-	display: flex;
-	flex: 1 1 100%;
-	align-items: center;
-	justify-content: center;
-	transition: 0.5s;
-	color: #ffffff;
-	background-color: #B199E1;
-}
-  
-.sliding-menu .slide-gyneco:hover {
-	font-size: 250%;
-}
-
-/*
-*
-Slide actu
-*
-*/  
-.sliding-menu .slide-actu {
-	display: flex;
-	flex: 1 1 100%;
-	align-items: center;
-	justify-content: center;
-	transition: 0.5s;
-	color:  #ffffff;
-	background-color: #E8B73A;
-}
-  
-.sliding-menu .slide-actu:hover {
-	font-size: 250%;
-}
-
-@media (max-width: 60rem) {
-/*
-*
-Slide chirurgie
-*
-*/
-	.sliding-menu .slide-chirurgie:hover {
-	  padding-top: 40vw;
-	}
-/*
-*
-Slide mater
-*
-*/
-	.sliding-menu .slide-mater:hover {
-		padding-top: 40vw;
-	}
-/*
-*
-Slide gyneco
-*
-*/
-	.sliding-menu .slide-gyneco:hover {
-		padding-top: 40vw;
-	}
-/*
-*
-Slide actu
-*
-*/
-	.sliding-menu .slide-actu:hover {
-		padding-top: 40vw;
-	}
-}
-
-@media (min-width: 60rem) {
-	.sliding-menu {
-	  flex-direction: row;
-	}
-/*
-*
-Slide chirurgie
-*
-*/
-	.sliding-menu .slide-chirurgie span {
-	  transform: rotate(-90deg);
-	}
-	.sliding-menu .slide-chirurgie:hover {
-	  padding-right: 40vw;
-	}
-/*
-*
-Slide mater
-*
-*/
-	.sliding-menu .slide-mater span {
-		transform: rotate(-90deg);
-	  }
-	  .sliding-menu .slide-mater:hover {
-		padding-right: 40vw;
-	}
-/*
-*
-Slide gyneco
-*
-*/
-	.sliding-menu .slide-gyneco span {
-		transform: rotate(-90deg);
-	  }
-	  .sliding-menu .slide-gyneco:hover {
-		padding-right: 40vw;
-	}
-/*
-*
-Slide actu
-*
-*/
-	.sliding-menu .slide-actu span {
-		transform: rotate(-90deg);
-	  }
-	  .sliding-menu .slide-actu:hover {
-		padding-right: 40vw;
-	}
-}
-
-/*
-*
-					Footer 
-*
-*/
-.grid-container {
-	display: grid;
-	background-color:#E8B73A;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas:"logo contact mention";
-	padding: 5%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+  font-family: "Segoe UI", "sans-serif";
+  background-color: #fff;
+  overflow-x: hidden;
 }
 .logo {
-	grid-area: logo;
-	margin-top: auto;
-	margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
 
+ul{
+  display: flex;
 }
-.contact {
-	grid-area: contact;
-	color: #ffffff;
 
+ul li{
+ display: flex;
+ flex: 1 1 100%;
+ align-items: center;
+ transition: all 300ms ease;
+ list-style: none;
+ display: inline-block;
 }
-.mention {
-	grid-area: mention;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+
+ ul li a:hover {
+   padding-left: 40vw;
+ }
+
+nav ul li a {
+  display: block;
+  padding: 20px 80px;
+  text-decoration: none;
+  font-size: 22px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+  border-radius: 50px;
+  width: 130%;
+  text-align: center;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
-.mention ul li{
-	list-style: none;
-	padding: 10%;
+nav ul li a:hover {
+  color: white;
 }
-.mention ul li a{
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 110%;
+nav ul li.active a {
+  color: white;
 }
-.mention ul li a:hover{
-	text-decoration: none;
-	color: #94B7E6;
+nav ul li:nth-child(1) a {
+  background-color: #94B7E6;
+  z-index: 4;
+}
+nav ul li:nth-child(2) a {
+  background-color: #FFA498;
+  z-index: 3;
+}
+nav ul li:nth-child(3) a {
+  background-color: #B199E1;
+  z-index: 2;
+}
+nav ul li:nth-child(4) a {
+  background-color: #E8B73A;
+  z-index: 1;
 }
