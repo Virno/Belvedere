@@ -7,6 +7,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #ffffff;
+	overflow-x: hidden;
+	cursor: pointer;
 
 }
 
@@ -15,8 +17,8 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 1%;
-	margin-bottom: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 .sliding-menu {
@@ -44,17 +46,12 @@ Slide chirurgie
 	align-items: center;
 	justify-content: center;
 	transition: 0.5s;
-	color: #94B7E6;
-  
-
-}
-.sliding-menu .slide-chirurgie:not(:last-child) {
-	border-right: 1px solid #e4e4e4;
+	color: #ffffff;
+	background-color: #94B7E6;
 }
   
 .sliding-menu .slide-chirurgie:hover {
-	background-color:#94B7E6;
-	color: white;
+	font-size: 250%;
 }
 
 /*
@@ -68,15 +65,12 @@ Slide mater
 	align-items: center;
 	justify-content: center;
 	transition: 0.5s;
-	color: #FFA498;
-}
-.sliding-menu .slide-mater:not(:last-child) {
-	border-right: 1px solid #e4e4e4;
+	color: #ffffff;
+	background-color: #FFA498;
 }
   
 .sliding-menu .slide-mater:hover {
-	background-color: #FFA498;
-	color: white;
+	font-size: 250%;
 }
 
 /*
@@ -90,15 +84,12 @@ Slide gyneco
 	align-items: center;
 	justify-content: center;
 	transition: 0.5s;
-	color: #B199E1;
-}
-.sliding-menu .slide-gyneco:not(:last-child) {
-	border-right: 1px solid #e4e4e4;
+	color: #ffffff;
+	background-color: #B199E1;
 }
   
 .sliding-menu .slide-gyneco:hover {
-	background-color: #B199E1;
-	color: white;
+	font-size: 250%;
 }
 
 /*
@@ -112,15 +103,12 @@ Slide actu
 	align-items: center;
 	justify-content: center;
 	transition: 0.5s;
-	color:  #E8B73A;
-}
-.sliding-menu .slide-actu:not(:last-child) {
-	border-right: 1px solid #e4e4e4;
+	color:  #ffffff;
+	background-color: #E8B73A;
 }
   
 .sliding-menu .slide-actu:hover {
-	background-color: #E8B73A;
-	color: white;
+	font-size: 250%;
 }
 
 @media (max-width: 60rem) {
