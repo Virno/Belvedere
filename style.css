@@ -10,11 +10,7 @@ body {
 * {
 	box-sizing: border-box;
   }
-
   .strips {
-	display: flex;
-	flex: 1 1 100%;
-	align-items: center;
 	flex-direction: column;
 	min-height: 100vh;
 	text-align: center;
@@ -23,12 +19,6 @@ body {
 	margin: 0;
   }
   .strips__strip {
-	  display: flex;
-	  flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 100%;
-	  align-items: center;
-	  justify-content: center;
 	will-change: width, left, z-index, height;
 	position: absolute;
 	width: 25%;
@@ -174,6 +164,7 @@ body {
 	z-index: 3;
 	cursor: default;
   }
+
   @media screen and (max-width: 760px) {
 	.strips__strip--expanded {
 	  min-height: 100vh;
@@ -191,8 +182,7 @@ body {
 	opacity: 1;
 	-webkit-transform: translate(-50%, -50%) scale(1);
 			transform: translate(-50%, -50%) scale(1);
-  }
-  
+  }  
   .strip__title {
 	display: block;
 	transform: rotate(-90deg);
@@ -207,13 +197,13 @@ body {
 	top: 28%;
 	
   }
-  .Chirurgie_title .Actu_title .Gyleco_title .Maternite_title{
+  .strip__title{
 	position: relative;
 	right: 0%;
 	transition: 0.5s;
 
   }
-  .Chirurgie_title .Actu_title .Gyleco_title .Maternite_title:hover{
+  .strip__title:hover{
 	position: relative;
 	right: 25%;
   }
@@ -229,8 +219,7 @@ body {
 	  font-size: 50pt;
 	  transform: rotate(0deg);
 	}
-  }
-  
+  } 
   .strip__close {
 	position: absolute;
 	right: 3vw;
@@ -264,15 +253,6 @@ body {
 	100% {
 	  -webkit-transform: translate3d(0, 0, 0);
 			  transform: translate3d(0, 0, 0);
-	}
-  }
-  
-  @keyframes textbouge {
-	0% {
-		right: 0%;
-	}
-	100% {
-		right: 25%;
 	}
   }
   @-webkit-keyframes strip2 {
@@ -335,17 +315,6 @@ body {
 			  transform: translate3d(0, 0, 0);
 	}
   }
-  
-  .strips{
-	list-style: none;
-	padding: 0;
-  
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	justify-content: stretch;
-	flex: 1 1 100%;
-  }
   .strips .strips__strip{
 	display: flex;
 	flex: 1 1 100%;
@@ -354,8 +323,10 @@ body {
   
 	transition: all 300ms ease;
   }
-
-
-	.strips .strips__strip:hover {
+  .strips__strip{
+	  display: inline-flex;
+  }
+  .strips .strips__strip:hover {
 	  padding-top: 40vw;
-	}
+  }
+
