@@ -118,7 +118,7 @@ Slide chirurgie
 *
 */
 	.sliding-menu .slide-chirurgie:hover {
-	  padding-top: 40vw;
+	  padding-top: 40%;
 	}
 /*
 *
@@ -159,7 +159,7 @@ Slide chirurgie
 	  transform: rotate(-90deg);
 	}
 	.sliding-menu .slide-chirurgie:hover {
-	  padding-right: 40vw;
+	  padding-right: 20%;
 	}
 /*
 *
@@ -170,7 +170,7 @@ Slide mater
 		transform: rotate(-90deg);
 	  }
 	  .sliding-menu .slide-mater:hover {
-		padding-right: 40vw;
+		padding-right: 20%;
 	}
 /*
 *
@@ -181,7 +181,7 @@ Slide gyneco
 		transform: rotate(-90deg);
 	  }
 	  .sliding-menu .slide-gyneco:hover {
-		padding-right: 40vw;
+		padding-right: 20%;
 	}
 /*
 *
@@ -192,7 +192,7 @@ Slide actu
 		transform: rotate(-90deg);
 	  }
 	  .sliding-menu .slide-actu:hover {
-		padding-right: 40vw;
+		padding-right: 20%;
 	}
 }
 
@@ -203,7 +203,7 @@ Slide actu
 */
 .grid-container {
 	display: grid;
-	background-color:#E8B73A;
+	background-color:#ffffff;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	gap: 0px 0px;
@@ -222,24 +222,29 @@ Slide actu
 .contact {
 	grid-area: contact;
 	color: #ffffff;
-
+	background-color: #E8B73A;
+	border-radius: 30px;
+	margin: 5%;
+}
+.map {
+	padding-bottom: 10%;
+	padding-top: 5%;
 }
 .mention {
 	grid-area: mention;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+	background-color: #E8B73A;
+	border-radius: 30px;
+	margin: 5%;
 }
 .mention ul li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	list-style: none;
-	padding: 10%;
+	padding-top: 5%;
 }
 .mention ul li a{
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 110%;
-}
-.mention ul li a:hover{
-	text-decoration: none;
-	color: #94B7E6;
 }
