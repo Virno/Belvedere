@@ -51,7 +51,15 @@ Slide chirurgie
 .sliding-menu .slide-chirurgie:hover {
 	font-size: 250%;
 }
-
+.slide-chirurgie .imgchirurgie {
+	position: absolute;
+	margin-top:  2vw;
+	width: 30vw;
+	opacity: 0;
+}
+.imgchirurgie:hover {
+	opacity: 1;
+}
 /*
 *
 Slide mater
@@ -155,7 +163,6 @@ Slide chirurgie
 */
 	.sliding-menu .slide-chirurgie span {
 	  transform: rotate(-90deg);
-	  padding: 30%;
 	}
 	.sliding-menu .slide-chirurgie span:hover {
 		transform: rotate(0deg);
