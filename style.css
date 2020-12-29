@@ -216,7 +216,7 @@ body {
 	
   }
   .img_maternite{
-	  size: 100%;
+	  width: 90vw;
   }
   @media screen and (max-width: 760px) {
 	.strip__title {

@@ -29,11 +29,15 @@
     --font-weight--bold: bold;
   
     /* borders */
-    --border-color: #ccc;
+    --border-color: #5482FF;
+
   
     /* Buttons */
-    --button-color: #364fc7;
-    --button-label: #fff;
+    --button-color: #364ec700;
+    --button-color-hover: #5482FF;
+    --button-label: #5482FF;
+    --button-label-hover: #fff;
+    --button-color-border: #5482FF;
   
     /* Misc */
     --radius: var(--font-size);
@@ -120,11 +124,30 @@
     margin: 0;
     padding: calc(var(--font-size) / 2) var(--font-size);
     color: var(--button-label);
-    border: 1px solid var(--button-color);
+    border: 1px solid var(--button-color-border);
     background: var(--button-color);
     cursor: pointer;
+    width: 56%;
+    text-align: center;
   }
   
+  .nb{
+    border: 1px solid var(--button-color-border);
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+  }
+  .nb:hover{
+    background-color: var(--button-color-hover);
+    color: var(--button-label-hover);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+
+  }
   /**
    * LAYOUT
    * ------------------------------------------------------------------------------- */
@@ -168,11 +191,15 @@
     display: grid;
     grid-template-areas: "a b" ". c";
     gap: 20px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
   }
   .v2 {
     display: grid;
     grid-template-areas: "b a" "c .";
     gap: 20px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
   }
   .card__texte{
     grid-area: b;
@@ -206,15 +233,19 @@
     margin-bottom: var(--font-size);
     text-decoration: none;
     border-radius: 50px;
+    border-color: ;
     transition: var(--transition);
   }
   
   .button:hover,
-  .button:focus { border-radius: 0; }
+  .button:focus { 
+    background-color: var(--button-color-hover);
+    color: var(--button-label-hover);
+  }
   
   .button__primary {
     --button-color: #111;
-    --button-label: #fff;
+    --button-label: #5482FF;
   }
   
   .button__secondary {
@@ -302,17 +333,34 @@
   .card__title{
     font-family: 'Maven Pro', sans-serif;
   }
+
+
   /**
    * MEDIA QUERIES
    * ------------------------------------------------------------------------------- */
   
   /** Pour les résulutions suppérieurs à 640px */
-  @media (min-width: 40rem) {
+  @media (max-width: 640px) {
     :root { --font-size: 1.2rem; }
+
+    .v1{
+      display: grid;
+      grid-template-areas: "a" "b" "c";
+      gap: 20px;
+      	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .v2{
+      display: grid;
+      grid-template-areas: "a" "b" "c";
+      gap: 20px;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+    }
   }
   
   /** Pour les résulutions suppérieurs à 960px */
-  @media (min-width: 60rem) {
+  @media (min-width: 960px) {
     :root { --font-size: 1.3rem; }
   }
   
