@@ -1,80 +1,28 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Le Belvedere</title>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap" rel="stylesheet"> 
-<link href="style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Blue-0</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway|Spectral'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-	<header>
-<!-- Logo -->
-	</header>
-
-		<nav >
-			<ul class="strips">
-			<li class="strips__strip">
-			  <span class="strip__content">
-				<h1 class="strip__title Chirurgie_title" data-name="Lorem">Chirurgie</h1>
-				<img class="strip_img" src="image_menu/chirurgie-low.png"/>
-				<div class="strip__inner-text">
-				  <h2>Chirurgie</h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-				</div>
-				
-			  </span>
-			</li>
-			<li class="strips__strip">
-			  <span class="strip__content">
-				<h1 class="strip__title Maternite_title" data-name="Ipsum">Maternité</h1>
-				<img class="strip_img img_maternite" src="image_menu/maternite-low.png"/>
-				<div class="strip__inner-text">
-				  <h2>Maternité</h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-				</div>
-			</span>
-			</li>
-			<li class="strips__strip">
-			  <span class="strip__content">
-				<h1 class="strip__title Gyleco_title" data-name="Dolor">Gynécologie</h1>
-				<div class="strip__inner-text">
-				  <h2>Gynécologie</h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-				</div>
-			</span>
-			</li>
-			<li class="strips__strip">
-			  <span class="strip__content">
-				<h1 class="strip__title Actu_title" data-name="Sit">Actualité</h1>
-				<div class="strip__inner-text">
-				  <h2>Actualité</h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-				</div>
-			</span>
-			</li>
-			<!--<li class="strips__strip">
-			  <span class="strip__content">
-				<h1 class="strip__title" data-name="Amet">Here</h1>
-				<div class="strip__inner-text">
-				  <h2>Ettrics</h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-				  <p>
-					<a href="https://twitter.com/ettrics" target="_blank"><i class="fa fa-twitter"></i></a>
-				  </p>
-				</div>
-			</span>
-			</li>-->
-			<i class="fa fa-close strip__close"></i>
-		</ul>
-		</nav>
+<!-- partial:index.partial.html -->
+<div class="burger">
+  <span></span>
+</div>
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="menu.js"></script>
+<div class="overlay">
+  <ul class="nav-responsive">
+    <li class="lien-responsive">Maternité</li>
+    <li class="lien-responsive">Gynécologie</li>
+    <li class="lien-responsive">Chirurgie</li>
+    <li class="lien-responsive">Actualité</li>
+  </ul>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
