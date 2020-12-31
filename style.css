@@ -8,19 +8,24 @@ body {
   background-color: #fff;
   overflow-x: hidden;
 }
-.logo {
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  margin-top: 5vw;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 /*
 navbar
 */
 @media (min-width: 60rem) {
+  .bglogo {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo {
+    transform: rotate(90deg);
+    width: 7%;
+  }
   nav {
     position: fixed;
     top: 2vw;
@@ -100,7 +105,7 @@ corps de la page
     ". text_1 text_2 ."
     ". article_1 article_1 ."
     ". article_2 text_article2 .";
-    margin-top: 12%;
+    margin-top: 14%;
 }
 .infograph {
   grid-area: infograph;
@@ -212,7 +217,18 @@ a {
 }
 
 @media (max-width: 60rem) {
-  
+  .bglogo {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo {
+    transform: rotate(90deg);
+    width: 10%;
+  }  
   /*  BURGER
 ========================================== */
 .burger {
