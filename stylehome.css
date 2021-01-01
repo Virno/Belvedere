@@ -11,14 +11,17 @@ body {
 
 }
 
-.logo {
-	width: 9%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 1%;
-	padding-bottom: 1%;
-}
+.bglogo {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo {
+    transform: rotate(90deg);
+    width: 5%;
+  }
 
 .sliding-menu {
 	background: rgb(255, 255, 255);
@@ -51,15 +54,7 @@ Slide chirurgie
 .sliding-menu .slide-chirurgie:hover {
 	font-size: 250%;
 }
-.slide-chirurgie .imgchirurgie {
-	position: absolute;
-	margin-top:  2vw;
-	width: 30vw;
-	opacity: 0;
-}
-.imgchirurgie:hover {
-	opacity: 1;
-}
+
 /*
 *
 Slide mater
@@ -164,14 +159,7 @@ Slide chirurgie
 	.sliding-menu .slide-chirurgie span {
 	  transform: rotate(-90deg);
 	}
-	.sliding-menu .slide-chirurgie span:hover {
-		transform: rotate(0deg);
-		transition: 80ms;
-		margin-left: 50%;
-	  }
-	.sliding-menu .slide-chirurgie:hover {
-	  padding-right: 20%;
-	}
+
 /*
 *
 Slide mater
@@ -181,14 +169,6 @@ Slide mater
 		transform: rotate(-90deg);
 		padding: 30%;
 	  }
-	  .sliding-menu .slide-mater span:hover {
-		transform: rotate(0deg);
-		transition: 80ms;
-		margin-left: 50%;
-	  }
-	  .sliding-menu .slide-mater:hover {
-		padding-right: 20%;
-	}
 /*
 *
 Slide gyneco
@@ -198,14 +178,7 @@ Slide gyneco
 		transform: rotate(-90deg);
 		padding: 30%;
 	  }
-	  .sliding-menu .slide-gyneco span:hover {
-		transform: rotate(0deg);
-		transition: 80ms;
-		margin-left: 50%;
-	  }
-	  .sliding-menu .slide-gyneco:hover {
-		padding-right: 20%;
-	}
+
 /*
 *
 Slide actu
@@ -215,16 +188,11 @@ Slide actu
 		transform: rotate(-90deg);
 		padding: 30%;
 	  }
-	  .sliding-menu .slide-actu span:hover {
-		transform: rotate(0deg);
-		transition: 80ms;
-		margin-left: 50%;
-	  }
-	  .sliding-menu .slide-actu:hover {
-		padding-right: 20%;
-	}
 }
-
+ .slide-content {
+	 text-decoration: none;
+	 color: #fff;
+ }
 /*
 *
 					Footer 
