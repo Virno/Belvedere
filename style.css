@@ -90,6 +90,9 @@ navbar
     background-color: #E8B73A;
     z-index: 1;
   }
+  .bglogo{
+    position:initial;
+  }
 }
 /* 
 corps de la page
@@ -112,6 +115,9 @@ corps de la page
   display: flex;
   justify-content: center;
   height: 80%;
+}
+.infograph_mobile{
+  display: none;
 }
 .imgchirurgie {
   width: 1000px;
@@ -140,6 +146,9 @@ h2 {
 .text_3 {
   margin-top: 5%;
 }
+.soignant{
+  display: none;
+}
   /** Button */
   
 .button {
@@ -148,7 +157,7 @@ h2 {
     padding: 1%;
     color:#E8B73A;
     border: 2px solid;
-    border-radius: 20px;
+    border-radius: 40px;
     cursor: pointer;
     width: 14%;
     text-align: center;
@@ -169,16 +178,28 @@ h2 {
 }
 
 .button2 {
-  padding: 1%;
+  padding: 2%;
   color:#E8B73A;
   border: 2px solid;
-  border-radius: 20px;
+  border-radius: 40px;
   cursor: pointer;
   width: 12%;
   text-align: center;
   text-decoration: none;
 }
 
+.button:hover{
+  background-color: #E8B73A;
+  color: white;
+  border-color: white;
+  transition-duration: 0.2s;
+}
+.button2:hover{
+  background-color: #E8B73A;
+  color: white;
+  border-color: white;
+  transition-duration: 0.2s;
+}
 /* 
 footer
 */
@@ -229,6 +250,7 @@ a {
     transform: rotate(90deg);
     width: 10%;
   }  
+
   /*  BURGER
 ========================================== */
 .burger {
@@ -572,4 +594,243 @@ color: white;
 cursor: pointer;
 transition: all 300ms ease;
 }
+
+.grid-container {
+  display: grid;
+
+  gap: 0px 0px;
+  grid-template-areas:
+    ". infograph_mobile infograph_mobile ."
+    ". text_1 text_1 ."
+    ". text_2 text_2 ."
+    ". soignant soignant ."
+    ". article_1 article_1 ."
+    ". article_2 article_2 ."
+    ". text_article2 text_article2 .";
+    margin-top: 14%;
 }
+
+.infograph{
+  display: none;
+  position: unset;
+}
+.infograph_mobile{
+  grid-area: infograph_mobile;
+  display: grid;
+  grid-template-areas: 
+  ". img_menton button_menton button_menton"
+  ". img_levres button_levres button_levres"
+  ". img_front button_font button_font"
+  ". img_nez button_nez button_nez"  ;
+  gap:  15%;
+  padding-bottom: 50%;
+}
+.img_menton{
+  grid-area: img_menton;
+}
+
+.button_menton{
+  grid-area: button_menton;
+  
+}
+
+.img_levres{
+  grid-area: img_levres;
+}
+
+.button_levres{
+  grid-area: button_levres;
+  
+}
+
+.img_front{
+  grid-area: img_front;
+}
+
+.button_front{
+  grid-area: button_font;
+  
+}
+
+.img_nez{
+  grid-area: img_nez;
+}
+
+.button_nez{
+  grid-area: button_nez;
+  
+}
+
+.button_infog{
+
+  padding: 9%;
+  color: #94B7E6;
+  border: 2px solid;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 95%;
+  height: 60%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15pt;
+  margin-top: 15%;
+}
+.button_infog:hover{
+  background-color: #94B7E6;
+  color: white;
+  border-color: white;
+  transition-duration: 0.2s;
+}
+
+.soignant{
+  display: grid;
+  margin-right: 50%;
+  grid-area: soignant;
+}
+
+.imgchirurgie {
+display: none;
+}
+
+.text_1 {
+  grid-area: text_1;
+  padding: 0%;
+  text-align: center;
+}
+.text_2 {
+  grid-area: text_2;
+  padding: 0%;
+  text-align: center;
+}
+.article_1 {
+  grid-area: article_1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%;
+}
+h2 {
+  margin-top: -15%;
+  color: #E8B73A;
+  text-align: center;
+}
+
+.illustration{
+  padding-top: 5%;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.text_3 {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.article_2 {
+  grid-area: article_2;
+  margin-top: 20%;
+
+}
+.text_article2 {
+  grid-area: text_article2;
+  margin-top: 20%;
+}
+
+.photopatiente{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.text_4 {
+  margin-bottom: 5%;
+  text-align: center;
+}
+  /** Button */
+  
+.button {
+    padding-top: 1%;
+    color:#E8B73A;
+    border: 2px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 32%;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  
+  }
+  .button2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #E8B73A;
+    border: 2px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 31%;
+    text-align: center;
+    text-decoration: none;
+ 
+  }
+  
+  .button:hover{
+    background-color: #E8B73A;
+    color: white;
+    border-color: white;
+    transition-duration: 0.2s;
+  }
+  .button2:hover{
+    background-color: #E8B73A;
+    color: white;
+    border-color: white;
+    transition-duration: 0.2s;
+  }
+
+/* 
+footer
+*/
+footer{
+  padding-top: 15vh;
+}
+.grid-container2 {
+  display: grid;
+  gap:  15%;
+  grid-template-areas:
+    "espace confidentialite conditions faq";
+    background-color: #94B7E6;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.espace { 
+  grid-area: espace; 
+}
+.confidentialite {
+  grid-area: confidentialite;
+  display: flex;
+  justify-content: center;
+}
+.conditions {
+  grid-area: conditions;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.faq {
+  grid-area: faq;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+}
+
