@@ -1,11 +1,17 @@
+@font-face {
+  font-family: "LucidaGrande";
+  src: url("Font/LucidaGrande.ttf");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 body {
-  font-family: "Segoe UI", "sans-serif";
+  font-family: "LucidaGrande", "sans-serif";
   background-color: #fff;
+  
 
 }
 
