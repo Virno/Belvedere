@@ -6,7 +6,7 @@
 body {
   font-family: "Segoe UI", "sans-serif";
   background-color: #fff;
-  overflow-x: hidden;
+
 }
 
 
@@ -834,3 +834,384 @@ a {
 
 }
 
+@media (max-width: 375px) {
+  .bglogo {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo {
+    transform: rotate(90deg);
+    width: 10%;
+  }  
+
+  /*  BURGER
+========================================== */
+.burger {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  border-radius: 4px;
+  z-index: 0;
+}
+.burger span {
+  position: relative;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -1.5px;
+}
+.burger span, .burger span::before, .burger span::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #2a2a2a;
+  outline: 1px solid transparent;
+  -webkit-transition-property: background-color, -webkit-transform;
+  -moz-transition-property: background-color, -moz-transform;
+  -o-transition-property: background-color, -o-transform;
+  transition-property: background-color, transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.burger span::before, .burger span::after {
+  position: absolute;
+  content: "";
+}
+.burger span::before {
+  top: -9px;
+}
+.burger span::after {
+  top: 9px;
+}
+.burger.clicked span {
+  background-color: transparent;
+}
+.burger.clicked span::before {
+  -webkit-transform: translateY(9px) rotate(45deg);
+  -moz-transform: translateY(9px) rotate(45deg);
+  -ms-transform: translateY(9px) rotate(45deg);
+  -o-transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
+}
+.burger.clicked span::after {
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+  -moz-transform: translateY(-9px) rotate(-45deg);
+  -ms-transform: translateY(-9px) rotate(-45deg);
+  -o-transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
+}
+.burger.clicked span:before, .burger.clicked span:after {
+  background-color: #ffffff;
+}
+.burger:hover {
+  cursor: pointer;
+}
+
+/*  OVERLAY
+========================================== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #5996f0;
+  opacity: 0;
+  visibility: hidden;
+}
+.overlay.show {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+/* TEXTE
+========================================== */
+.nav-responsive{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  list-style: none;
+  justify-content: center;
+}
+
+
+.lien-responsive{
+  font-size: 41pt;
+  font-weight: bold;
+  margin-top: 10vh;
+  font-family: "lato";
+  display: flex;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.lien-responsive:hover{
+color: white;
+cursor: pointer;
+transition: all 300ms ease;
+}
+
+.grid-container {
+  display: grid;
+
+  gap: 0px 0px;
+  grid-template-areas:
+    ". infograph_mobile infograph_mobile ."
+    ". text_1 text_1 ."
+    ". text_2 text_2 ."
+    "soignant soignant soignant ."
+    ". article_1 article_1 ."
+    ". article_2 article_2 ."
+    ". text_article2 text_article2 .";
+    margin-top: 14%;
+}
+
+.infograph{
+  display: none;
+  position: unset;
+}
+.infograph_mobile{
+  grid-area: infograph_mobile;
+  display: grid;
+  grid-template-areas: 
+  ". img_menton button_menton button_menton"
+  ". img_levres button_levres button_levres"
+  ". img_front button_font button_font"
+  ". img_nez button_nez button_nez"  ;
+  gap:  15%;
+  padding-bottom: 50%;
+}
+.img_menton{
+  grid-area: img_menton;
+}
+
+.button_menton{
+  grid-area: button_menton;
+  
+}
+
+.img_levres{
+  grid-area: img_levres;
+}
+
+.button_levres{
+  grid-area: button_levres;
+  
+}
+
+.img_front{
+  grid-area: img_front;
+}
+
+.button_front{
+  grid-area: button_font;
+  
+}
+
+.img_nez{
+  grid-area: img_nez;
+}
+
+.button_nez{
+  grid-area: button_nez;
+  
+}
+
+.button_infog{
+
+  padding: 9%;
+  color: #94B7E6;
+  border: 2px solid;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 120%;
+  height: 60%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15pt;
+  margin-top: 15%;
+}
+.button_infog:hover{
+  background-color: #94B7E6;
+  color: white;
+  border-color: white;
+  transition-duration: 0.2s;
+}
+
+.soignant{
+  display: grid;
+  grid-area: soignant;
+  width: auto;
+}
+
+.photosoignant{
+  width: 266%;
+}
+
+.imgchirurgie {
+display: none;
+}
+
+.text_1 {
+  grid-area: text_1;
+  padding: 0%;
+  text-align: center;
+  margin-top: 90%;
+}
+.text_2 {
+  grid-area: text_2;
+  padding: 0%;
+  text-align: center;
+}
+.article_1 {
+  grid-area: article_1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%;
+}
+h2 {
+  margin-top: -15%;
+  color: #E8B73A;
+  text-align: center;
+}
+
+.illustration{
+  padding-top: 5%;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.text_3 {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.article_2 {
+  grid-area: article_2;
+  margin-top: 20%;
+
+}
+.text_article2 {
+  grid-area: text_article2;
+  margin-top: 20%;
+}
+
+.photopatiente{
+  width: 100%;
+}
+
+.text_4 {
+  margin-bottom: 5%;
+  text-align: center;
+}
+  /** Button */
+  
+.button {
+  padding: 2%;
+  color: #E8B73A;
+  border: 2px solid;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 76%;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 15pt;
+  
+  }
+  .button2 {
+    padding: 2%;
+    color: #E8B73A;
+    border: 2px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 76%;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 15pt;
+ 
+  }
+  
+  .button:hover{
+    background-color: #E8B73A;
+    color: white;
+    border-color: white;
+    transition-duration: 0.2s;
+  }
+  .button2:hover{
+    background-color: #E8B73A;
+    color: white;
+    border-color: white;
+    transition-duration: 0.2s;
+  }
+
+/* 
+footer
+*/
+footer{
+  padding-top: 15vh;
+}
+.grid-container2 {
+  display: grid;
+  gap:  13%;
+  grid-template-areas:
+    "espace confidentialite conditions faq";
+    background-color: #94B7E6;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.espace { 
+  grid-area: espace; 
+}
+.confidentialite {
+  grid-area: confidentialite;
+  display: flex;
+  justify-content: center;
+}
+.conditions {
+  grid-area: conditions;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.faq {
+  grid-area: faq;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+}
