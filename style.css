@@ -840,7 +840,7 @@ a {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .bglogo {
     display: flex;
     justify-content: center;
