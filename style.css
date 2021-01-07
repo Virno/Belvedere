@@ -25,12 +25,12 @@ navbar
     display: flex;
     justify-content: center;
     background-color: #fff;
-    margin-top: 11vw;
+    margin-top: 9vw;
   }
   .logo {
     transform: rotate(90deg);
-    width: 7%;
-  }
+    width: 6vw;
+    }
   nav {
     position: fixed;
     top: 2vw;
@@ -106,6 +106,22 @@ p{
   text-align: justify;
 }
 
+.widget{
+  background: #E8B73A;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  left: -32px;
+  padding: 8px 0;
+  display: grid;
+  grid-gap: 10%;
+  height: 40vh;
+  border-radius: 40px;
+}
+
+.imgsidebar{
+  width: 43%;
+}
 
 .grid-container {
   display: grid;
@@ -178,6 +194,7 @@ h2 {
 .text_article2 {
   grid-area: text_article2;
   margin-top: 20%;
+  margin-left: 5%;
 }
 .text_4 {
   margin-bottom: 5%;
