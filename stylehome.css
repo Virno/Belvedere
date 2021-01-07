@@ -21,7 +21,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #ffffff;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 
 }
 
@@ -66,7 +67,7 @@ Slide chirurgie
 	background: #94B7E6;
 }
 .sliding-menu .slide-chirurgie:hover {
-	font-size: 250%;
+	font-size: 210%;
 }
 
 /*
@@ -85,7 +86,7 @@ Slide mater
 }
   
 .sliding-menu .slide-mater:hover {
-	font-size: 250%;
+	font-size: 210%;
 }
 
 /*
@@ -104,7 +105,7 @@ Slide gyneco
 }
   
 .sliding-menu .slide-gyneco:hover {
-	font-size: 250%;
+	font-size: 210%;
 }
 
 /*
@@ -123,11 +124,19 @@ Slide actu
 }
   
 .sliding-menu .slide-actu:hover {
-	font-size: 250%;
+	font-size: 210%;
 }
 
 @media (max-width: 60rem) {
-
+	body {
+		font-family: "LucidaGrande";
+		margin: 0;
+		padding: 0;
+		background-color: #ffffff;
+		overflow-x: hidden;
+		overflow-y:visible;
+	
+	}
 /*
 *
 Slide chirurgie
@@ -163,7 +172,15 @@ Slide actu
 }
 
 @media (min-width: 60rem) {
-
+	body {
+		font-family: "LucidaGrande";
+		margin: 0;
+		padding: 0;
+		background-color: #ffffff;
+		overflow-x: hidden;
+		overflow-y:hidden;
+	
+	}
 	.sliding-menu {
 	  flex-direction: row;
 	}
