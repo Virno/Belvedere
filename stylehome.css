@@ -1,6 +1,11 @@
 * {
 	box-sizing: border-box;
 }
+
+img {
+	max-width: 100%;
+}
+
 @font-face {
 	font-family: "LucidaGrande";
 	src: url("Font/LucidaGrande.ttf");	
@@ -23,7 +28,7 @@ body {
   }
   .logo {
 	transform: rotate(90deg);
-	height: 10vh;
+	width: 100px;
   }
 
 .sliding-menu {
