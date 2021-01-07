@@ -25,9 +25,7 @@ navbar
     display: flex;
     justify-content: center;
     background-color: #fff;
-    margin-top: 8vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 11vw;
   }
   .logo {
     transform: rotate(90deg);
@@ -216,12 +214,13 @@ footer
   display: grid;
   grid-template-columns: 3.9fr 0.5fr 0.5fr 0.5fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 15%;  
   grid-template-areas:
     "espace confidentialite conditions faq";
     background-color: #94B7E6;
     padding-top: 2%;
     padding-bottom: 2%;
+    padding-right: 7%;
 }
 .espace { grid-area: espace; }
 .confidentialite {
@@ -586,12 +585,14 @@ footer{
 }
 .grid-container2 {
   display: grid;
-  gap:  15%;
+  gap: 9px;  
   grid-template-areas:
     "espace confidentialite conditions faq";
     background-color: #94B7E6;
     padding-top: 2%;
     padding-bottom: 2%;
+    padding-right: 0;
+    grid-template-columns: none;
 }
 .espace { 
   grid-area: espace; 
@@ -968,12 +969,14 @@ footer{
 }
 .grid-container2 {
   display: grid;
-  gap:  13%;
   grid-template-areas:
-    "espace confidentialite conditions faq";
+    "espace" "confidentialite" "conditions" "faq";
     background-color: #94B7E6;
     padding-top: 2%;
     padding-bottom: 2%;
+    padding-right: 0;
+    gap: 9px;  
+  grid-template-columns: none;
 }
 .espace { 
   grid-area: espace; 
