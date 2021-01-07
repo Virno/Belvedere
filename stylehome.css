@@ -2,12 +2,11 @@
 	box-sizing: border-box;
 }
 @font-face {
-	font-family: "";
-	src: url("Font/LucidaGrande.ttf");
-	
+	font-family: "LucidaGrande";
+	src: url("Font/LucidaGrande.ttf");	
   }
 body {
-	font-family: "LucidaGrande", "sans-serif";
+	font-family: "LucidaGrande";
 	margin: 0;
 	padding: 0;
 	background-color: #ffffff;
@@ -23,7 +22,8 @@ body {
     margin-right: auto;
   }
   .logo {
-    transform: rotate(90deg);
+	transform: rotate(90deg);
+	height: 10vh;
   }
 
 .sliding-menu {
@@ -116,6 +116,7 @@ Slide actu
 }
 
 @media (max-width: 60rem) {
+
 /*
 *
 Slide chirurgie
@@ -151,6 +152,7 @@ Slide actu
 }
 
 @media (min-width: 60rem) {
+
 	.sliding-menu {
 	  flex-direction: row;
 	}
