@@ -25,7 +25,7 @@ navbar
     display: flex;
     justify-content: center;
     background-color: #fff;
-    margin-top: 9vw;
+    margin-top: 8vw;
   }
   .logo {
     transform: rotate(90deg);
@@ -39,6 +39,8 @@ navbar
     text-align: center;
     transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
+    margin-top: -0.3%;
+
   }
 
   ul{
@@ -106,22 +108,26 @@ p{
   text-align: justify;
 }
 
-.widget{
+.sidebar{
   background: #E8B73A;
   width: 130px;
   position: fixed;
   z-index: 1;
-  left: -32px;
-  padding: 8px 0;
+  left: -79px;
+  padding: 23px 0;
   display: grid;
   grid-gap: 10%;
-  height: 40vh;
+  height: 30vh;
   border-radius: 40px;
+  top: 28%;
 }
 
 .imgsidebar{
-  width: 43%;
+  width: 26%;
+  margin-left: 64%;
+  margin-top: 10%;
 }
+
 
 .grid-container {
   display: grid;
@@ -285,6 +291,7 @@ a {
   right: 10%;
   border-radius: 4px;
   z-index: 0;
+  margin-top: -0.1%;
 }
 .burger span {
   position: relative;
@@ -395,6 +402,10 @@ a {
 color: white;
 cursor: pointer;
 transition: all 300ms ease;
+}
+
+.sidebar{
+  display: none;
 }
 
 .grid-container {
@@ -774,6 +785,10 @@ a {
 color: white;
 cursor: pointer;
 transition: all 300ms ease;
+}
+
+.sidebar{
+  display: none;
 }
 
 .grid-container {
